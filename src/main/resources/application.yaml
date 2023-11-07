@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://destiny.cowkcjbubqwg.us-east-2.rds.amazonaws.com/destiny
+    username: admin
+    password: Aouvoa1b!123()()
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8180/realms/destiny-dev/protocol/openid-connect/certs
